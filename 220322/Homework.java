@@ -24,7 +24,7 @@ public class Homework {
 			
 			if (a>10 || a<0)
 			{
-				System.out.println("잘못입력하였습니다."); // 카운트 해야 하나? 
+				System.out.println("잘못입력하였습니다."); // 카운트 해야 하나? 카운트 하지 않아야 한다면 어떻게?
 			}
 			if (a==0)
 			{

@@ -6,7 +6,7 @@ public class Gugu_user {
 		// TODO Auto-generated method stub
 
 		
-		System.out.println("¸î´ÜÀ» Ãâ·ÂÇÒ±î¿ä?");
+		System.out.println("ëª‡ë‹¨ì„ ì¶œë ¥í• ê¹Œìš”?");
 		Scanner sc = new Scanner(System.in);
 		int j = sc.nextInt();
 		

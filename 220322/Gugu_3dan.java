@@ -5,7 +5,7 @@ public class Gugu_3dan {
 		// TODO Auto-generated method stub
 
 		
-		System.out.println("±¸±¸´Ü 3´Ü Ãâ·Â");
+		System.out.println("êµ¬êµ¬ë‹¨ 3ë‹¨ ì¶œë ¥");
 		for (int i=1; i<10; i++)
 		{
 			System.out.printf("%d*%d=%d\n",3,i,3*i);

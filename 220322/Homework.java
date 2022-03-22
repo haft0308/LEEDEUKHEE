@@ -24,7 +24,8 @@ public class Homework {
 			
 			if (a>10 || a<0)
 			{
-				System.out.println("잘못입력하였습니다."); // 카운트 해야 하나? 카운트 하지 않아야 한다면 어떻게?
+				System.out.println("잘못입력하였습니다.");
+				i=i-1; // 카운트에서 제외하기, 카운트 하려면 삭제
 			}
 			if (a==0)
 			{
@@ -32,7 +33,7 @@ public class Homework {
 			}
 			
 		}
-		System.out.printf("%d번 입력 받았습니다.",i-1);
+		System.out.printf("%d번 입력 받았습니다.",i-1); // 0 입력을 카운트에서 제외하기 위해 -1 함
 	}
 
 }

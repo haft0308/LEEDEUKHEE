@@ -4,7 +4,7 @@ public class Ex67 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//While¹® »ç¿ë 1¿¡¼­ 100±îÁö ÇÕÀ» ±¸ÇÏ±â
+		//Whileë¬¸ ì‚¬ìš© 1ì—ì„œ 100ê¹Œì§€ í•©ì„ êµ¬í•˜ê¸°
 		int sum = 0;
 		int a=1;
 		
@@ -15,7 +15,7 @@ public class Ex67 {
 		}
 		System.out.println(sum);
 		
-		// 1~100±îÁö Á¦°öÀÇ ÇÕ ±¸ÇÏ±â
+		// 1~100ê¹Œì§€ ì œê³±ì˜ í•© êµ¬í•˜ê¸°
 		
 		int hap =0;
 		for (int i=0; i<=100; i++)
@@ -27,9 +27,19 @@ public class Ex67 {
 		System.out.println(hap);
 		
 		
-		//1¿¡¼­ 100±îÁö ÇÕÀ» ±¸ÇÏ´Â °úÁ¤¿¡¼­ ÇÕÀÌ 100ÀÌ ³ÑÀ» ¶§ÀÇ ÃÖ¼Ò Á¤¼ö°ª°ú ±×¶§±îÁöÀÇ ÇÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥
+		//1ì—ì„œ 100ê¹Œì§€ í•©ì„ êµ¬í•˜ëŠ” ê³¼ì •ì—ì„œ í•©ì´ 100ì´ ë„˜ì„ ë•Œì˜ ìµœì†Œ ì •ìˆ˜ê°’ê³¼ ê·¸ë•Œê¹Œì§€ì˜ í•©ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
 		
-		
+		int b=1;
+		int sum2=0;
+		for (b=1; b<=100; b++)
+		{
+			sum2=sum2+b;
+			if (sum2>100)
+			{
+				break;
+			}
+		}
+		System.out.printf("ìµœì†Œì •ìˆ˜ê°’:%d, í•©:%d",b,sum2);
 		
 	}
 

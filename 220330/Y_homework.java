@@ -38,18 +38,38 @@ public class Y_homework {
 		System.out.println("=====================================");
 		
 		
+// 		int w= 1;
+// 		int[][] q;
+// 		q=new int[5][5];
+// 		for(int i=0; i<5; i++)
+// 		{
+			
+// 			for(int j=i; j<5; j++)
+// 			{
+// 				q[i][j]=w++;
+// 				System.out.printf("q[%d][%d] = %d\t",i,j,q[i][j]);				
+// 			}
+			
+// 			System.out.println();
+// 		}
+		
+		
 		int w= 1;
 		int[][] q;
 		q=new int[5][5];
 		for(int i=0; i<5; i++)
-		{
-			
+		{			
 			for(int j=i; j<5; j++)
 			{
-				q[i][j]=w++;
-				System.out.printf("q[%d][%d] = %d\t",i,j,q[i][j]);				
+				q[i][j]=w++;						
 			}
-			
+		}
+		for(int i=0; i<5; i++)
+		{			
+			for(int j=0; j<5; j++)
+			{				
+				System.out.print(q[i][j]+"\t");				
+			}			
 			System.out.println();
 		}
 		

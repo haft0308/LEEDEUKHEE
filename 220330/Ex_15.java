@@ -3,49 +3,49 @@ public class Ex_15 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//eauals()¸¦ È°¿ëÇÑ ´Ü¾î ¸ÂÃß±â °ÔÀÓ
+//eauals()ë¥¼ í™œìš©í•œ ë‹¨ì–´ ë§ì¶”ê¸° ê²Œì„
 		
 		Scanner sc = new Scanner(System.in);
 		
-		String chair = "ÀÇÀÚ";
-		String computer ="ÄÄÇ»ÅÍ";
-		String integer = "Á¤¼ö";
+		String chair = "ì˜ì";
+		String computer ="ì»´í“¨í„°";
+		String integer = "ì •ìˆ˜";
 				
-		System.out.println("Q1. chairÀÇ ¶æÀº?");
+		System.out.println("Q1. chairì˜ ëœ»ì€?");
 		String a = sc.next();
 		
 		if(a.equals(chair))
 		{
-			System.out.println("Á¤´äÀÔ´Ï´Ù.");
+			System.out.println("ì •ë‹µì…ë‹ˆë‹¤.");
 		}
 		else
 		{
-			System.out.println("Æ²·È½À´Ï´Ù. Á¤´äÀº ÀÇÀÚÀÔ´Ï´Ù.");
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€ ì˜ìì…ë‹ˆë‹¤.");
 		}
 		
-		System.out.println("Q2. mtopecurÀÇ ¶æÀº?");
+		System.out.println("Q2. mtopecurì˜ ëœ»ì€?");
 		String b= sc.next();
 		
 		if(b.equals(computer))
 		{
-			System.out.println("Á¤´äÀÔ´Ï´Ù.");
+			System.out.println("ì •ë‹µì…ë‹ˆë‹¤.");
 		}
 		else
 		{
-			System.out.println("Æ²·È½À´Ï´Ù. Á¤´äÀº ÄÄÇ»ÅÍÀÔ´Ï´Ù.");
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€ ì»´í“¨í„°ì…ë‹ˆë‹¤.");
 		}
 		
-		System.out.println("Q3. integerÀÇ ¶æÀº?");
+		System.out.println("Q3. integerì˜ ëœ»ì€?");
 		String c= sc.next();
 		
 		if(c.equals(integer))
 		{
-			System.out.println("Á¤´äÀÔ´Ï´Ù.");
+			System.out.println("ì •ë‹µì…ë‹ˆë‹¤.");
 		}
 		else
 		{
-			System.out.println("Æ²·È½À´Ï´Ù. Á¤´äÀº Á¤¼öÀÔ´Ï´Ù.");
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€ ì •ìˆ˜ì…ë‹ˆë‹¤.");
 		}
 	}
-
+//ë°°ì—´ì˜ ë°°ì—´ë¡œ ë§Œë“¤ ìˆ˜ ìˆê² ë‹¤?
 }

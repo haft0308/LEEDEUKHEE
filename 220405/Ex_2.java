@@ -5,38 +5,37 @@ public class Ex_2 {
 		// TODO Auto-generated method stub
 
 		
-		int[][] a = new int[2][4];
-		int[][] b = new int[2][4];
+		int[][] a = random();
+		int[][] b = random();
 		
-		for(int i=0; i<2; i++)
+		rPrint(a);
+		rPrint(b);
+		
+		rPrint(sum(a,b));
+		rPrint(mul(a,b));		
+				
+	}
+	
+	static int[][] random()
+	{
+		int[][] a = new int[2][4];
+		for(int i=0; i<a.length; i++)
 		{
-			for(int j=0; j<4; j++)
+			for(int j=0; j<a[i].length; j++)
 			{
 				a[i][j] =(int)(Math.random()*10);
-				b[i][j] =(int)(Math.random()*10);
+			}			
+		}
+		return a;
+	}
+	
+	static void rPrint(int[][] a)
+	{
+		for(int i=0; i<a.length; i++)
+		{
+			for(int j=0; j<a[i].length; j++)
+			{
 				System.out.print(a[i][j]+"\t");
-			}
-			System.out.println();
-		}
-		System.out.println("---------------------------");
-		
-		for(int i=0; i<2; i++)
-		{
-			for(int j=0; j<4; j++)
-			{
-				System.out.print(b[i][j]+"\t");
-			}
-			System.out.println();
-		}
-		System.out.println("---------------------------");
-		
-		int[][] hap = sum(a, b);
-		
-		for(int i=0; i<2; i++)
-		{
-			for(int j=0; j<4; i++)
-			{
-				System.out.print(hap[i][j]+"\t");
 			}
 			System.out.println();
 		}
@@ -46,14 +45,27 @@ public class Ex_2 {
 	static int[][] sum(int[][] a, int[][] b)
 	{
 		int[][] sum = new int[2][4];
-		for(int i=0; i<2; i++)
+		for(int i=0; i<sum.length; i++)
 		{
-			for(int j=0; j<4; j++)
+			for(int j=0; j<sum[i].length; j++)
 			{
 				sum[i][j] = a[i][j] + b[i][j];
 			}
 		}
 		return sum;
+	}
+	
+	static int[][] mul(int[][] a, int[][] b)
+	{
+		int[][] mul = new int[2][4];
+		for(int i=0; i<mul.length; i++)
+		{
+			for(int j=0; j<mul[i].length; j++)
+			{
+				mul[i][j] = a[i][j] * b[i][j];
+			}
+		}
+		return mul;
 	}
 
 }

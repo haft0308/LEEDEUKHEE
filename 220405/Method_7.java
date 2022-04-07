@@ -10,8 +10,8 @@ public class Method_7 {
 			array[i] = i+1;
 		}
 		print_arr(array); //배열의 값을 출력하는 함수 호출
-		
-//		int[] b = changArray(array); //Array 값을 변경하는 함수 호출
+		System.out.println();
+		changeArray(array); //Array 값을 변경하는 함수 호출
 	}
 
 	static void print_arr(int[] a)

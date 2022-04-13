@@ -12,7 +12,7 @@ public class TestMain {
 		Test4 t = new Test4();
 		
 		int[] array = new int[] {3,4,5,6,7};
-		t.sum(array);
+
 		System.out.println(t.sum(array));
 	}
 

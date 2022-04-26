@@ -16,8 +16,7 @@ public class GameMain_my2 {
 		System.out.println("==========================");
 		System.out.println("캐릭터를 선택하세요. 1. 피카추 2. 꼬부기 3. 이상해씨");
 	
-		PlayGame pg;
-		
+		PlayGame pg;		
 		
 		int a = sc.nextInt();
 		Character character = null;
@@ -64,6 +63,7 @@ abstract class Character
 	protected int hp;
 	protected int level = 0;
 	protected int energy;
+	protected int money = 10000;
 	
 	public abstract void eat();
 	public abstract void sleep();
@@ -76,7 +76,7 @@ abstract class Character
 	public boolean checkEnergy()
 	{
 		boolean ret = false;
-		if(energy <=0)
+		if(energy <=0|| money<=0)
 		{
 			ret=true; //에너지가 0이 되어 게임을 종료할 수 있도록
 		}
@@ -89,15 +89,17 @@ abstract class Character
 	public void printInfo()
 	{
 		System.out.println("현재 캐릭터의 정보 출력");
-		System.out.println("hp = "+hp +" / "+"energy = "+energy+" / "+"level = "+level);
+		System.out.println("hp = "+hp +" / "+"energy = "+energy+" / "+"level = "+level+" / "+"money = "+money);
 	}
 }
 class Picachu extends Character
 {
+	
 	Picachu()
 	{
 		hp =30;
 		energy = 50;
+//		money = 10000;
 		System.out.println("피카추가 생성되었습니다.");
 		printInfo();
 	}
@@ -136,6 +138,7 @@ class Picachu extends Character
 	{
 		energy += 50;
 		hp += 30;
+		money -=1000;
 		levelUp();
 		return checkEnergy();
 	}
@@ -146,6 +149,7 @@ class Gobook extends Character
 	{
 		hp =40;
 		energy = 50;
+//		money = 10000;
 		System.out.println("꼬부기가 생성되었습니다.");
 		printInfo();
 	}
@@ -183,6 +187,7 @@ class Gobook extends Character
 	{
 		energy += 50;
 		hp += 30;
+		money -=1000;
 		levelUp();
 		return checkEnergy();
 	}
@@ -193,6 +198,7 @@ class Lee extends Character
 	{
 		hp =20;
 		energy = 30;
+//		money = 10000;
 		System.out.println("피카추가 생성되었습니다.");
 		printInfo();
 	}
@@ -228,6 +234,7 @@ class Lee extends Character
 	}
 	public boolean buyHp()
 	{
+		money -=1000;
 		energy += 50;
 		hp += 30;
 		levelUp();
@@ -254,7 +261,7 @@ class PlayGame
 	}
 	public void printMenu(Scanner sc)
 	{
-		System.out.println("1.밥먹이기 2.잠재우기 3.놀아주기 4.운동시키기 5.구매하기 6.종료");
+		System.out.println("1.밥먹이기 2.잠재우기 3.놀아주기 4.운동시키기 5.경험치구매하기 6.종료");
 		menu = sc.nextInt();
 		play();
 	}

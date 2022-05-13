@@ -3,14 +3,10 @@ package test1;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Iterator;
+
 
 public class StudentPrint {
 
@@ -29,19 +25,10 @@ public class StudentPrint {
 			{
 				System.out.println(str);
 				String[] strArray = str.split(","); //strArray[0],[1]...
-				//strArray[0] ==>"1" => Integer.valueOf("1")=>1			
-//				System.out.println(strArray[0]);
-//				System.out.println(strArray[2]);
 				
 				Singer singer = new Singer(Integer.valueOf(strArray[0]),strArray[1],
 						Integer.valueOf(strArray[2]),Integer.valueOf(strArray[3]),
 						Integer.valueOf(strArray[4]));
-//				Singer singer2 = new Singer();
-//				singer2.setNo(Integer.valueOf(strArray[0]));
-//				singer2.setName(strArray[1]);
-//				singer2.setKor(Integer.valueOf(strArray[2]));
-//				singer2.setEng(Integer.valueOf(strArray[3]));
-//				singer2.setMath(Integer.valueOf(strArray[4]));
 				
 				al.add(singer);				
 			}
